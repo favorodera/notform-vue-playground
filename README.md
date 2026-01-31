@@ -1,48 +1,27 @@
-# notform-shadcn
+# NotForm
 
-This template should help get you started developing with Vue 3 in Vite.
+[![license](https://img.shields.io/github/license/favorodera/notform.svg?style=flat-square)](https://github.com/favorodera/notform/blob/main/LICENSE)
+[![github stars](https://img.shields.io/github/stars/favorodera/notform.svg?style=flat-square)](https://github.com/favorodera/notform/stargazers)
 
-## Recommended IDE Setup
+**Vue Forms Without the Friction.**
 
-[VS Code](https://code.visualstudio.com/) + [Vue (Official)](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
+NotForm is a powerful, yet simple form validation and state management library for Vue and Nuxt. It focuses on providing a seamless developer experience with a type-safe API and minimal boilerplate.
 
-## Recommended Browser Setup
+## Documentation
 
-- Chromium-based browsers (Chrome, Edge, Brave, etc.):
-  - [Vue.js devtools](https://chromewebstore.google.com/detail/vuejs-devtools/nhdogjmejiglipccpnnnanhbledajbpd)
-  - [Turn on Custom Object Formatter in Chrome DevTools](http://bit.ly/object-formatters)
-- Firefox:
-  - [Vue.js devtools](https://addons.mozilla.org/en-US/firefox/addon/vue-js-devtools/)
-  - [Turn on Custom Object Formatter in Firefox DevTools](https://fxdx.dev/firefox-devtools-custom-object-formatters/)
+Full documentation and examples can be found at:
+**[notform-docs.vercel.app](https://notform-docs.vercel.app/)**
 
-## Type Support for `.vue` Imports in TS
+## Stackblitz Playground
 
-TypeScript cannot handle type information for `.vue` imports by default, so we replace the `tsc` CLI with `vue-tsc` for type checking. In editors, we need [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) to make the TypeScript language service aware of `.vue` types.
+Playground can be found at:
+**[notform-playground](https://stackblitz.com/edit/notform-playground)**
 
-## Customize configuration
+## Features
 
-See [Vite Configuration Reference](https://vite.dev/config/).
+- **Type-safe:** Built with TypeScript from the ground up.
+- **Composable:** Easy to use with Vue 3 Composition API.
+- **Lightweight:** Tiny footprint with no unnecessary bloat.
+- **Flexible:** Works with any validation library (Yup, Zod, etc.) via Standard Schema.
+- **Nuxt Support:** Official Nuxt module for a first-class Nuxt experience.
 
-## Project Setup
-
-```sh
-pnpm install
-```
-
-### Compile and Hot-Reload for Development
-
-```sh
-pnpm dev
-```
-
-### Type-Check, Compile and Minify for Production
-
-```sh
-pnpm build
-```
-
-### Lint with [ESLint](https://eslint.org/)
-
-```sh
-pnpm lint
-```
