@@ -10,6 +10,7 @@ const form = useNotForm({
   schema,
   initialState: {
     array: [''],
+    range: 50,
   },
   onSubmit: async (data) => {
     console.log('Combined form submitted:', data)
@@ -158,7 +159,7 @@ watch(activeSchema, () => {
                   <label class="nf-label" :for="name">Number</label>
                   <input
                     :id="name"
-                    v-model="form.state.value.number"
+                    v-model.number="form.state.value.number"
                     class="nf-input"
                     type="number"
                     :name="name"
@@ -175,11 +176,11 @@ watch(activeSchema, () => {
               <NotField v-slot="{ methods, name }" name="range">
                 <div class="nf-field">
                   <label class="nf-label" :for="name">
-                    Range ({{ form.state.value.range || 50 }})
+                    Range ({{ form.state.value.range }})
                   </label>
                   <input
                     :id="name"
-                    v-model="form.state.value.range"
+                    v-model.number="form.state.value.range"
                     class="w-full"
                     type="range"
                     min="0"
@@ -223,7 +224,7 @@ watch(activeSchema, () => {
                     type="file"
                     :name="name"
                     v-bind="methods"
-                    @change="(e) => form.state.value.file = (e.target as HTMLInputElement).files?.[0] || null"
+                    @change="(event) => form.state.value.file = (event.target as HTMLInputElement).files?.[0] || null"
                   >
                   <NotMessage v-slot="{ message }" :name="name">
                     <p class="nf-error capitalize" v-if="message">
