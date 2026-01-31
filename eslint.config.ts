@@ -25,7 +25,7 @@ export default defineConfigWithVueTs(
     rules: { ...stylistic.configs.recommended.rules },
   },
 
-    {
+  {
     rules: {
       '@stylistic/quotes': ['error', 'single', { avoidEscape: true }],
       '@stylistic/no-multiple-empty-lines': ['error', { max: 2, maxEOF: 2, maxBOF: 0 }],
